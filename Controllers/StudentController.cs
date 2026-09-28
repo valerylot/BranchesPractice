@@ -21,7 +21,7 @@ namespace BranchesPractice.Controllers
         [HttpGet("getall")]
         public ActionResult<List<string>> StudentGetAll()
         {
-            return _studentService.StudentGetAll();
+            return Ok(_studentService.StudentGetAll());
         }
 
     }
